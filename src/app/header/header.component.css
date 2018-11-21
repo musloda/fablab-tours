@@ -1,0 +1,62 @@
+/*
+.navbar-expand-lg {
+
+	background-image: url("../../assets/images/image-header/accueil-back-ground.jpg");
+
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+	position: relative;
+	min-height: 400px;
+}
+
+#funlablogo {
+	background-image: url("../../assets/images/image-header/logo-fabrique-d-usage-numérique.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	min-height: 400px;
+	}*/
+
+	.navbar {
+
+		background-color:transparent !important;
+		border-color:transparent;
+		background-image:none;
+		box-shadow:none;  
+	}
+	.backgroundimage {
+		background-image: url("../../assets/images/image-header/accueil-back-ground.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-width: 100%;
+		min-height: 100%;
+		position: absolute;
+	}
+
+	h1{
+		font-size: 340%;
+		margin-top: 20%;
+		font-family: Didot, serif;
+		font-weight: 900;
+	}
+
+.navbar-brand {
+	max-width: 200px;
+}
+
+ul{
+	margin-left:15%;
+}
+
+#navbarNav {
+	max-width: 1000px;
+}
+
+.form-group {
+	position: sticky;
+}
