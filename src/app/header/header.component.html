@@ -1,40 +1,39 @@
 <div class="backgroundimage">
   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-    
+
     <button class="navbar-toggler mr-4" type="button" (click)="isCollapsed = !isCollapsed">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand d-flex">
+    <a class="navbar-brand d-flex justify-content-between">
       <img src="../../assets/images/image-header/logo_funlab.png" width="120%" height="120%" routerLink="/accueil">
     </a>
-
+<i class="fas fa-search"></i>
     <div class="navbar-collapse" id="navbarNav"  [ngbCollapse]="!isCollapsed">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
-          <h3 class="nav-link mx-2" routerLink="/accueil">Accueil</h3>
+          <h3 class="nav-link text-info mx-2" routerLink="/accueil">Accueil</h3>
         </li>
         <li class="nav-item">
-          <h3 class="nav-link mx-2" routerLink="/agenda">Agenda</h3>
+          <h3 class="nav-link text-info mx-2" routerLink="/agenda">Agenda</h3>
         </li>
         <li class="nav-item">
-          <h3 class="nav-link mx-2" routerLink="/blog">Blog</h3>
+          <h3 class="nav-link text-info mx-2" routerLink="/blog">Blog</h3>
         </li>
         <li class="nav-item">
-          <h3 class="nav-link mx-2" routerLink="/wiki">Wiki</h3>
+          <h3 class="nav-link text-info mx-2" routerLink="/wiki">Wiki</h3>
         </li>
         <li class="nav-item">
-          <h3 class="nav-link mx-2" routerLink="/equipe">Equipe</h3>
+          <h3 class="nav-link text-info mx-2" routerLink="/equipe">Equipe</h3>
         </li>
         <li class="nav-item">
-          <h3 class="nav-link mx-2" routerLink="/contact">Contact</h3>
+          <h3 class="nav-link text-info mx-2" routerLink="/contact">Contact</h3>
         </li>       
       </ul>
 
-
       <form class="form-inline justify-content-center">
         <input name="productName" class="fa fa-search form-control" list="mylist" type="search" placeholder="Rechercher" aria-label="Search">
-        <i role="submit" class="fa fa-search"></i>
+        <i role="submit" class="fas fa-search"></i>
       </form>
 
     </div>
