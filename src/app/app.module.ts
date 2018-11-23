@@ -1,22 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { HostListener } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 
 
+import { PresentationComponent } from './presentation/presentation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule,
-
+    NgbModule.forRoot(),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
