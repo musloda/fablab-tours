@@ -1,30 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { HostListener } from '@angular/core';
+
 
 @Component({
-	selector: 'app-header',
-	templateUrl: './header.component.html',
-	styleUrls: ['./header.component.css']
+selector: 'app-header',
+templateUrl: './header.component.html',
+styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  constructor() { }
 
-	constructor() { }
+ngOnInit() {}
 
-	ngOnInit() {
-	}
+// @HostListener('window:scroll', [])
+// onWindowScroll() {
 
-	@HostListener("window:scroll", [])
-	onWindowScroll() {
+// 	const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+// 	if (number > 100) {
+// 		return true;
 
-		const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-		if (number > 100) {
-			return true;
+// 	} else if (number > 500) {
+// 		return false;
 
-		} else if (number > 500) {
-			return false;
+  // 	}
 
-		}
-
-	}
+// }
 
 }

@@ -3,24 +3,9 @@
 		background-color:transparent !important;
 		border-color:transparent;
 		background-image:none;
-		box-shadow:none;  
+		box-shadow:none;
 	}
 
-	.backgroundimage {
-		background-image: url("../../assets/images/image-header/accueil-back-ground.jpg");
-		background-size: cover;
-		background-repeat: no-repeat;
-		min-width: 100%;
-		min-height: 100%;
-		position: absolute;
-	}
-
-	h1{
-		font-size: 340%;
-		margin-top: 30%;
-		font-family: Didot, serif;
-		font-weight: 900;
-	}
 
 	.navbar-brand {
 		max-width: 200px;

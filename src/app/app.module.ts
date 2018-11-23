@@ -11,6 +11,13 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { LocalisationComponent } from './localisation/localisation.component';
 import { AdhesionComponent } from './adhesion/adhesion.component';
 import { FooterComponent } from './footer/footer.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { AgendaComponent } from './agenda/agenda.component';
+import { ContactComponent } from './contact/contact.component';
+import { AppRoutingModule } from './app-routing.module';
+import { IndexComponent } from './index/index.component';
+import { EquipeComponent } from './equipe/equipe.component';
+import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.component';
 
 
 @NgModule({
@@ -20,13 +27,20 @@ import { FooterComponent } from './footer/footer.component';
     PresentationComponent,
     FooterComponent,
     LocalisationComponent,
-    AdhesionComponent
+    AdhesionComponent,
+    AccueilComponent,
+    AgendaComponent,
+    ContactComponent,
+    IndexComponent,
+    EquipeComponent,
+    CommentCaMarcheComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     AngularOpenlayersModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
 
   providers: [],
