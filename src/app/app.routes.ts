@@ -9,7 +9,8 @@ const ROUTES: Route[] = [
 },
 { path: '',
     redirectTo: '/accueil',
-    pathMatch: 'full' },
+    pathMatch: 'full' 
+},
 
 ];
 

@@ -40,12 +40,10 @@
 		text-align: center;
 	}
 
-	@media screen and (max-width: 1150px;){
-		img{
-			justify-content: center;
-		}
+	.navbar-toggler{
+		background-color: #808080;
 	}
 
-	.navbar-toggler{
+	.navbar.scroll{
 		background-color: #808080;
 	}
