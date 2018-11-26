@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { AngularOpenlayersModule } from 'ngx-openlayers';
+import { HostListener } from'@angular/core';
 
 
 import { AppComponent } from './app.component';
@@ -33,14 +34,17 @@ import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.
     ContactComponent,
     IndexComponent,
     EquipeComponent,
-    CommentCaMarcheComponent
+    CommentCaMarcheComponent,
+
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
     AngularOpenlayersModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+
   ],
 
   providers: [],
