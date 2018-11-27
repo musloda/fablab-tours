@@ -1,8 +1,14 @@
 .logo_FanLab img {
-  height: 24px;
-  width: 24px;
+margin-left: -12px;
+margin-top: -40px;
+width: 30px;
+height: 41px;
+z-index: 250;
 }
-
+.logo_FanLab p{
+  color: red;
+  margin-top: 0px;
+}
 hr {
   border-top: 1px solid #007bff;
   width: 70%;
@@ -36,3 +42,5 @@ a {
 .pic_mame img {
   max-height: 250px;
 }
+
+
