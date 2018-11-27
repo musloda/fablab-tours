@@ -1,87 +1,7 @@
 .container {
   margin-right: 10%;
-  margin-top: 10%;
-}
-
-.form-radio-inline .form-radio-label {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-.form-sublegend {
-  margin: 0 0 0.125rem 0;
-  font-weight: 500;
-  font-size: 1rem;
-  color: #333;
-}
-
-.form-radio-label {
-  position: relative;
-  cursor: pointer;
-  padding-left: 1.5rem;
-  text-align: left;
-  color: #333;
-  display: block;
-  margin-bottom: 0.5rem;
-  padding-right: 1rem;
-}
-
-.form-card {
-  border-radius: 2px;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.56s cubic-bezier(0.25, 0.8, 0.25, 1);
-  max-width: 500px;
-  padding: 0;
-  margin: 125px auto 50px auto;
-}
-
-.form-card:hover,
-.form-card:focus {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.form-card:focus-within {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.form-actions {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 2.25rem;
-}
-
-.form-actions::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background: #999;
-  opacity: 0.3;
-}
-
-.form-actions>* {
-  -ms-flex: 1;
-  flex: 1;
-  margin-top: 0;
-}
-
-.form-fieldset {
-  padding: 30px;
-  border: 0;
-}
-
-.form-fieldset+.form-fieldset {
-  margin-top: 15px;
-}
-
-.form-legend {
-  padding: 1em 0 0;
-  margin: 0 0 -0.5em;
-  font-size: 1.5rem;
-  text-align: center;
-  color: #28a745;
+  margin-top: 15%;
+  margin-bottom: 20%;
 }
 
 .form-legend+p {
@@ -115,7 +35,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #28a745;
+  background: #00BFFF;
   height: 2px;
   display: block;
   transform: rotateY(90deg);
@@ -137,7 +57,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  color: #a6a6a6;
   transform: translateY(-50%);
   transform-origin: left center;
   transition: transform 0.28s ease, color 0.28s linear, opacity 0.28s linear;
@@ -246,16 +165,16 @@ select.form-element-field {
 
 /**
 if form invalid
-*/
+
 
 .ng-valid[required],
 .ng-valid.required,
 .ng-valid {
   border-left: 5px solid #42A948;
-  /* green */
 }
 
 .ng-invalid:not(form) {
   border-left: 5px solid #a94442;
-  /* red */
 }
+
+*/
