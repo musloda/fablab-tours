@@ -1,4 +1,11 @@
-.marge
-{
-padding-top: 1000px;
-}
+	.marge
+	{
+		padding-top: 800px;
+	}
+
+
+	@media screen and (min-width: 1600px ) {
+		.marge{
+			padding-top: 1000px;
+		}
+	}
