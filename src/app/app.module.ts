@@ -19,6 +19,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { IndexComponent } from './index/index.component';
 import { EquipeComponent } from './equipe/equipe.component';
 import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.component';
+import { NavcolorDirective } from './directives/navcolor.directive';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.
     IndexComponent,
     EquipeComponent,
     CommentCaMarcheComponent,
+    NavcolorDirective,
 
   ],
   imports: [

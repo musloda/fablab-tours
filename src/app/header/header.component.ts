@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from'@angular/core';
+import { NavcolorDirective } from '../directives/navcolor.directive';
+
 
 @Component({
 	selector: 'app-header',
@@ -7,6 +9,7 @@ import { HostListener } from'@angular/core';
 	styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+	
 	constructor() { }
 
 	ngOnInit() {}
@@ -30,5 +33,4 @@ export class HeaderComponent implements OnInit {
 			return false;
 		}
 	}
-
 }
