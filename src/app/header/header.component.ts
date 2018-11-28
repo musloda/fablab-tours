@@ -15,16 +15,16 @@ export class HeaderComponent implements OnInit {
 	onWindowScroll() {
 
 		const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-		if (number > 820) {
+		if (number > 790) {
 			return true;
 		} else if (number > 2000) {
 			return false;
 		}
 	}
 
-	onWindowfix(){
+	onWindowfix() {
 		const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-		if (number < 821) {
+		if (number < 791) {
 			return true;
 		} else if (number < 2000) {
 			return false;
