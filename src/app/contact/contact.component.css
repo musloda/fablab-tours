@@ -35,7 +35,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #00BFFF;
+  background: #33CCFF;
   height: 2px;
   display: block;
   transform: rotateY(90deg);
@@ -98,7 +98,7 @@
 }
 
 .form-element-field:focus~.form-element-label {
-  color: #28a745;
+  color: #33CCFF;
 }
 
 .form-element-field.-hasvalue,
@@ -113,27 +113,7 @@
   pointer-events: auto;
 }
 
-input.form-element-field:not(:placeholder-shown) {
-  opacity: 1;
-}
 
-input.form-element-field:not(:placeholder-shown)~.form-element-label {
-  transform: translateY(-100%) translateY(-0.5em) translateY(-2px) scale(0.9);
-  cursor: pointer;
-  pointer-events: auto;
-}
-
-select.form-element-field {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-}
-
-.form-select-placeholder {
-  color: #a6a6a6;
-  display: none;
-}
 
 .form-select .form-element-bar::before {
   content: "";
