@@ -1,83 +1,49 @@
-	.nav1 {
+.nav1 {
 
-		background-color:transparent !important;
-		border-color:transparent;
-		background-image:none;
-		box-shadow:none;
-		z-index: 1;  
-		transition: 0.4s;
-	}
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
+	z-index: 1;  
+	transition: 0.4s;
+}
 
-	.nav2 {
-		background-color: #808080;
-		opacity: 0.9;
-		z-index: 1;
-		box-shadow: 0px 4px 8px black;
-		z-index: 1;
-		transition: 0.4s;
-	}
-
-
-	.navbar-brand {
-		max-width: 200px;
-		cursor: pointer;
-	}
-
-	ul{
-		margin-left:15%;
-		font-family: Didot, serif;
-
-	}
-
-	i{
-		font-size: 130%;
-		position: absolute;
-		right: 23px;
-		cursor: pointer;
-	}
-
-	@media screen and (min-width:800px) and (max-width: 991px){
-		
-		i{
-			font-size: 130%;
-			right:335px;
-			position: absolute;
-			cursor: pointer;
-		}
-	}
-
-	@media screen and (min-width: 400px) and (max-width: 800px){
-		i{
-			font-size: 130%;
-			right:235px;
-			position: absolute;
-			cursor: pointer;
-		}
-	}
-
-	@media screen and (max-width: 400px){
-		i{
-			font-size: 130%;
-			right:100px;
-			position: absolute;
-			cursor: pointer;
-		}
-	}
+.nav2 {
+	background-color: #808080;
+	opacity: 0.9;
+	z-index: 1;
+	box-shadow: 0px 4px 8px black;
+	z-index: 1;
+	transition: 0.4s;
+}
 
 
-	.nav-link:hover {
-		transform: scale(1.1);
-		cursor: pointer;
-	}
+.navbar-brand {
+	max-width: 200px;
+	cursor: pointer;
+}
 
-	.navbar-nav {
-		text-align: center;
-	}
+ul{
+	margin-left:15%;
+	font-family: Didot, serif;
 
-	.navbar-toggler{
-		background-color: #808080;
-	}
+}
 
-	.navbar.scroll{
-		background-color: #808080;
-	}
+
+
+.nav-link:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.navbar-nav {
+	text-align: center;
+}
+
+.navbar-toggler{
+	background-color: #808080;
+}
+
+.navbar.scroll{
+	background-color: #808080;
+}

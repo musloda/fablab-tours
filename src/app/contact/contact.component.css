@@ -138,3 +138,8 @@ img{
 h1{
   text-align: center;
 }
+
+.logo_FanLab img {
+  height: 39px;
+  width: 39px;
+}

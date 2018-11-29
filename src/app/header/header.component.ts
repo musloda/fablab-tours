@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from'@angular/core';
-import { NavcolorDirective } from '../directives/navcolor.directive';
-
 
 @Component({
 	selector: 'app-header',
@@ -9,10 +7,15 @@ import { NavcolorDirective } from '../directives/navcolor.directive';
 	styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-	
-	constructor() { }
 
-	ngOnInit() {}
+	filterDisplayed: boolean;
+	searchCollapsed: boolean;
+
+	constructor() {}
+
+	ngOnInit() {
+		this.filterDisplayed = true;
+	}
 
 	@HostListener("window:scroll", [])
 	onWindowScroll() {

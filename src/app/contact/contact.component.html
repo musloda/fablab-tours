@@ -1,12 +1,66 @@
 <div class="container">
 	<div class="row">
 		<div class="col-12 col-sm-12 col-xl-6">
-			<img src="../../assets/images/image-contact/contact1.jpg">Funlab<br>
+			 <!--Debut map géolicalisant fanlab-->
+      <div class="card">
+        <div class="card-body text-center">
+          <h4><strong>Map</strong></h4>
+          <div class="map">
+            <aol-map>
+              <aol-control-zoom></aol-control-zoom>
+              <aol-control-fullscreen></aol-control-fullscreen>
+              <aol-interaction-default></aol-interaction-default>
+              <aol-view [zoom]="14">
+                <aol-coordinate [x]=" 0.66842" [y]="47.39301" [srid]="'EPSG:4326'"></aol-coordinate>
+              </aol-view>
+              <aol-layer-tile [opacity]="1">
+                <aol-source-osm></aol-source-osm>
+              </aol-layer-tile>
+              <aol-layer-vector>
+                <aol-source-cluster [distance]="60">
+                  <aol-source-vector>
+                    <aol-feature>
+                      <aol-overlay>
+                        <!--Coordonnées FanLab-->
+                        <aol-coordinate [x]="0.6691059" [y]="47.3931929" [srid]="'EPSG:4326'"></aol-coordinate>
+                        <aol-content>
+                          <span class="logo_FanLab">
+                           <img  src="../assets/localisationimages/MapMarker.png">
+                          </span>
+                        </aol-content>
+                      </aol-overlay>
+                    </aol-feature>
+                  </aol-source-vector>
+                </aol-source-cluster>
+              </aol-layer-vector>
+              <aol-layer-vector>
+                <aol-source-vector>
+                  <aol-feature>
+                    <aol-geometry-polygon>
+                      <aol-collection-coordinates [coordinates]="[[1.47, 43.545],[1.51, 43.545],[1.51, 43.565], [1.47, 43.565]]"
+                        [srid]="'EPSG:4326'">
+                      </aol-collection-coordinates>
+                    </aol-geometry-polygon>
+                    <aol-style>
+                      <aol-style-stroke [color]="'red'" [width]="2"></aol-style-stroke>
+                      <aol-style-fill [color]="[255,0,0,0.1]"></aol-style-fill>
+                    </aol-style>
+                  </aol-feature>
+                </aol-source-vector>
+              </aol-layer-vector>
+            </aol-map>
+          </div>
+        </div>
+      </div>
+      <!--Fin map-->
 			MAME<br>
 			49 Boulevard Preuilly<br>
 			37000 Tours<br>
 			contact@funlab.fr
 		</div>
+
+
+		<!-- formulaire de contact -->
 		<div class="card col-12 col-sm-12 col-xl-6">
 			<h1>Contact</h1>
 			<div class="form-element form-input form-group">
@@ -40,5 +94,6 @@
 				<small class="form-element-hint" >(champ obligatoire)</small>
 			</div>
 		</div>	
+		<!-- fin formulaire de contact -->
 	</div>
 </div>
