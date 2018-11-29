@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { AngularOpenlayersModule } from 'ngx-openlayers';
-import { HostListener } from'@angular/core';
+import { HostListener } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
@@ -16,7 +16,6 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { AgendaComponent } from './agenda/agenda.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
-import { IndexComponent } from './index/index.component';
 import { EquipeComponent } from './equipe/equipe.component';
 import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.component';
 
@@ -32,7 +31,6 @@ import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.
     AccueilComponent,
     AgendaComponent,
     ContactComponent,
-    IndexComponent,
     EquipeComponent,
     CommentCaMarcheComponent,
 
@@ -43,8 +41,6 @@ import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.
     AngularOpenlayersModule,
     FormsModule,
     AppRoutingModule,
-
-
   ],
 
   providers: [],
