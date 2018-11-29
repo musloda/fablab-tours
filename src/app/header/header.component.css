@@ -1,0 +1,77 @@
+	.nav1 {
+
+		background-color:transparent !important;
+		border-color:transparent;
+		background-image:none;
+		box-shadow:none;  
+	}
+
+	.nav2 {
+		background-color: #808080;
+		opacity: 0.9;
+		z-index: 1;
+		box-shadow: 0px 4px 8px black;
+	}
+
+
+	.navbar-brand {
+		max-width: 200px;
+	}
+
+	ul{
+		margin-left:15%;
+		font-family: Didot, serif;
+
+	}
+
+	i{
+		font-size: 130%;
+		position: absolute;
+		right: 23px;
+		cursor: pointer;
+	}
+
+	@media screen and (min-width:800px) and (max-width: 991px){
+		
+		i{
+			font-size: 130%;
+			right:335px;
+			position: absolute;
+			cursor: pointer;
+		}
+	}
+
+	@media screen and (min-width: 400px) and (max-width: 800px){
+		i{
+			font-size: 130%;
+			right:235px;
+			position: absolute;
+			cursor: pointer;
+		}
+	}
+
+	@media screen and (max-width: 400px){
+		i{
+			font-size: 130%;
+			right:100px;
+			position: absolute;
+			cursor: pointer;
+		}
+	}
+
+
+	.nav-link:hover {
+		transform: scale(1.1);
+	}
+
+	.navbar-nav {
+		text-align: center;
+	}
+
+	.navbar-toggler{
+		background-color: #808080;
+	}
+
+	.navbar.scroll{
+		background-color: #808080;
+	}
