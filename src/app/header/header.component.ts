@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
 			return false;
 		}
 	}
-	*/
+
 	window;onload=function(){
 		document.window
 		(document).ready (function(){
@@ -50,4 +50,6 @@ export class HeaderComponent implements OnInit {
 				$(".sideMenu, .overlay").hide():$(".sideMenu, .overlay").show()})}):
 		console.log("sidebarNavigation Requires jQuery")};
 
-	}
+	
+*/
+}

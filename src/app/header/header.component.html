@@ -1,21 +1,4 @@
 <!--
-<nav class="navbar fixed-top flex-column navbar-expand-lg navbar-light nav1" *ngIf="onWindowfix()">
-  <a class="navbar-brand d-flex justify-content-between">
-    <img src="../../assets/images/image-header/logo_funlab.png" width="115%" height="115%" routerLink="">
-  </a>
-  <button type="button" (click)="showFilter()" id="boutonfiltre2" class="button" [ngClass]="{'transBtn': filterDisplayed}">{{ filterDisplayed ? '&#10094;' : '&#10095;'}} Filtre</button>
-</nav>
-
-
-
-<nav class="navbar fixed-top flex-column navbar-expand-lg navbar-light nav2" *ngIf="onWindowScroll()">
-  <a class="navbar-brand d-flex justify-content-between">
-    <img src="../../assets/images/image-header/logo_funlab.png" width="115%" height="115%" routerLink="">
-  </a>
-  <button type="button" (click)="showFilter()" id="boutonfiltre2" class="button" [ngClass]="{'transBtn': filterDisplayed}">{{ filterDisplayed ? '&#10094;' : '&#10095;'}} Filtre</button>
-</nav>
--->
-<!--
 <nav class="navbar navbar-inverse fixed-left">
   <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
     <span class="navbar-toggler-icon"></span>
@@ -48,53 +31,16 @@
   </div>
 </nav>
 -->
-<!-- Debut sidenav -->
-<!-- 
-<nav class="sidebar bg-light d-none d-xl-block pl-2" id="nav1">
-  <div class="navbar-nav">
-    <div class="row">
-      <div class="col-12 d-flex justify-content-center">
-        <div class="navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <h3 class="nav-link text-info mx-2" routerLink="">Accueil</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link text-info mx-2" routerLink="/agenda">Agenda</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link text-info mx-2" routerLink="/blog">Blog</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link text-info mx-2" routerLink="/wiki">Wiki</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link text-info mx-2" routerLink="/equipe">Equipe</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link text-info mx-2" routerLink="/contact">Contact</h3>
-            </li>
-          </ul>
 
-          <form class="form-inline justify-content-center">
-            <input name="search" class="fa fa-search form-control" type="search" placeholder="Rechercher" aria-label="Search">
-            <i role="submit" class="fa fa-search"></i>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
--->
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sidebarNavigation" data-sidebarClass="navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler leftNavbarToggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+<nav class="navbar navbar-dark bg-dark sidebarNavigation" data-sidebarClass="navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="!isCollapsed">
+        <div class="navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="!isCollapsed">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home
@@ -108,8 +54,6 @@
                     <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">Dropdown</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
