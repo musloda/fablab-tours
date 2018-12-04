@@ -12,11 +12,27 @@
   height: 100vh;
 }
 
+img{
+  margin-left:40%;
+  z-index: 3;
+}
+
+i{
+  margin-left: 92%;
+  margin-top:-8%;
+}
+
+.navbar-toggler{
+  z-index:1;
+}
+
+.fa{
+  color: white;
+}
 
 button{
-  background-color: white;
-  width: 60px;
   border-radius: 20%;
+  border: none;
 }
 
 .nav-item{

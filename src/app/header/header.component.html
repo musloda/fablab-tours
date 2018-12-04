@@ -1,11 +1,20 @@
- 
 
-<div class="fixed-top" id="nav1" [ngClass]="{'trans': filterDisplayed}">
-  <button class="button" type="button" (click)="showFilter()" (click)="isCollapsed = !isCollapsed" id="boutonfiltre2" class="btnStartPos"
-  [ngClass]="{'transBtn': filterDisplayed}">{{ filterDisplayed ? '&#10005;' : '&#8801;'}}</button>
-</div>
-
-<nav class="sidebar hidden fixed-top" id="nav1" [ngClass]="{'trans': filterDisplayed}">
+<nav class="navbar navbar-light fixed-top">
+  <button [ngClass]="{'transBtn': sidebarDisplayed}" (click)="showSidebar()" (click)="isCollapsed = !isCollapsed" 
+  id="boutonfiltre2" class="btnStartPos navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<!-- boutton show sidebar
+  <div class="fixed-top" id="nav1" [ngClass]="{'trans': filterDisplayed}">
+    <button class="button" type="button" (click)="showFilter()" (click)="isCollapsed = !isCollapsed" id="boutonfiltre2" class="btnStartPos"
+    [ngClass]="{'transBtn': filterDisplayed}">{{ filterDisplayed ? '&#10005;' : '&#8801;'}}</button>
+  </div>
+-->
+<img src="../../assets/images/image-header/logo_funlab.png" width='17%'>
+<i class="fa fa-search"></i>
+</nav>
+<nav class="sidebar hidden fixed-top" id="nav1" [ngClass]="{'trans': sidebarDisplayed}">
   <a class="navbar-brand" href="#">FunLab</a>
   <div class="navbar-nav">
     <div class="row">
