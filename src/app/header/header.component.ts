@@ -7,7 +7,13 @@ import { HostListener } from'@angular/core';
 	styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+	filterDisplayed: boolean;
 	constructor() { }
-
-	ngOnInit() {}
-}
+	
+	ngOnInit() {
+		this.filterDisplayed = false;
+	}
+	showFilter() {
+		this.filterDisplayed = !this.filterDisplayed;
+	}
+};
