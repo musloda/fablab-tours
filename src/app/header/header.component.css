@@ -1,9 +1,8 @@
 .sidebar {
   height: 100vh;
-  width: 350px;
+  width: 280px;
   z-index: 1;
   font-size: 1rem;
-  color: #fff;
   background-color:black !important;
   opacity: 0.94;
 }
@@ -26,8 +25,11 @@ i{
   z-index:1;
 }
 
-.fa{
-  color: white;
+
+h3{
+  font-family: Didot, serif;
+  margin-top: 10%;
+  color: #fff;
 }
 
 button{
@@ -37,12 +39,6 @@ button{
 
 .nav-item{
   cursor: pointer;
-}
-
-a {
-  font-size: 2rem;
-  margin-left: 35%;
-  color: white;
 }
 
 
@@ -58,17 +54,21 @@ a {
 }
 
 .hidden {
-  transform: translateX(-350px);
+  transform: translateX(-280px);
   transition: transform 0.5s ease-in-out;
 }
 
 .transBtn {
   z-index: 1000;
   transition: transform 0.5s ease-in-out;
-  transform: translateX(350px);
+  transform: translateX(280px);
 }
 
 .btnStartPos {
   transform: translateX();
   transition: transform 0.5s ease-in-out;
+}
+
+input{
+  max-width: 200px;
 }
