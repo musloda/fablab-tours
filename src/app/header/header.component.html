@@ -1,143 +1,37 @@
-<!--
-  <nav class="navbar navbar-inverse fixed-left">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <img src="../../assets/images/image-header/logo_funlab.png" width="140px" height="70px" routerLink=""/>
-    <form class="form-inline my-2 my-lg-0 col-4">
-      <input class="fa fa-search form-control awesomplete mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    </form>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01" [ngbCollapse]="!isCollapsed">
-      <ul class="nav sidebar-nav">
-        <li class="nav-item">
-          <h3 class="nav-link text-info mx-2" routerLink="">Accueil</h3>
-        </li>
-        <li class="nav-item">
-          <h3 class="nav-link text-info mx-2" routerLink="/agenda">Agenda</h3>
-        </li>
-        <li class="nav-item">
-          <h3 class="nav-link text-info mx-2" routerLink="/blog">Blog</h3>
-        </li>
-        <li class="nav-item">
-          <h3 class="nav-link text-info mx-2" routerLink="/wiki">Wiki</h3>
-        </li>
-        <li class="nav-item">
-          <h3 class="nav-link text-info mx-2" routerLink="/equipe">Equipe</h3>
-        </li>
-        <li class="nav-item">
-          <h3 class="nav-link text-info mx-2" routerLink="/contact">Contact</h3>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  
-  
-  
-  <nav class="navbar navbar-dark bg-dark sidebarNavigation" data-sidebarClass="navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  
-  
-  <div class="navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="!isCollapsed">
-    <ul class="nav sidebar-nav">
-      <li class="nav-item">
-        <h3 class="nav-link mx-2" routerLink="">Accueil</h3>
-      </li>
-      <li class="nav-item">
-        <h3 class="nav-link mx-2" routerLink="/agenda">Agenda</h3>
-      </li>
-      <li class="nav-item">
-        <h3 class="nav-link mx-2" routerLink="/blog">Blog</h3>
-      </li>
-      <li class="nav-item">
-        <h3 class="nav-link mx-2" routerLink="/wiki">Wiki</h3>
-      </li>
-      <li class="nav-item">
-        <h3 class="nav-link mx-2" routerLink="/equipe">Equipe</h3>
-      </li>
-      <li class="nav-item">
-        <h3 class="nav-link mx-2" routerLink="/contact">Contact</h3>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="onload()">Search</button>
-    </form>
-  </div>
-</nav>
--->
-<nav class="navbar navbar-inverse">
-  <div class="d-xl-none fixed-top" id="nav1" [ngClass]="{'trans': filterDisplayed}">
-    <button class="navbar-toggler" type="button" (click)="showFilter()" (click)="isCollapsed = !isCollapsed" id="boutonfiltre2" class="d-xl-none btnStartPos"
-    [ngClass]="{'transBtn': filterDisplayed}">{{ filterDisplayed ? '&#10094;' : '&#10095;'}} Filtre</button>
-  </div>
-  
-  <nav class="sidebar bg-light d-none d-xl-block" id="nav1">
-    <a class="navbar-brand text-white" href="#">Filtrer</a>
-    <div class="navbar-nav">
-      <div class="row">
-        <div class="navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="!isCollapsed">
-          <ul class="nav sidebar-nav">
-            <li class="nav-item">
-              <h3 class="nav-link mx-2" routerLink="">Accueil</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link mx-2" routerLink="/agenda">Agenda</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link mx-2" routerLink="/blog">Blog</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link mx-2" routerLink="/wiki">Wiki</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link mx-2" routerLink="/equipe">Equipe</h3>
-            </li>
-            <li class="nav-item">
-              <h3 class="nav-link mx-2" routerLink="/contact">Contact</h3>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="onload()">Search</button>
-          </form>
-        </div>
-        
-      </div>
-    </div>
-  </nav>
-</nav>
+ 
 
-<nav class="sidebar d-xl-none hidden" id="nav1" [ngClass]="{'trans': filterDisplayed}">
-  <a class="navbar-brand text-white" href="#">Filtrer</a>
+<div class="fixed-top" id="nav1" [ngClass]="{'trans': filterDisplayed}">
+  <button class="button" type="button" (click)="showFilter()" (click)="isCollapsed = !isCollapsed" id="boutonfiltre2" class="btnStartPos"
+  [ngClass]="{'transBtn': filterDisplayed}">{{ filterDisplayed ? '&#10005;' : '&#8801;'}}</button>
+</div>
+
+<nav class="sidebar hidden fixed-top" id="nav1" [ngClass]="{'trans': filterDisplayed}">
+  <a class="navbar-brand" href="#">FunLab</a>
   <div class="navbar-nav">
     <div class="row">
-      <div class="navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="!isCollapsed">
-        <ul class="nav sidebar-nav">
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="!isCollapsed">
+        <ul class="nav sidebar-nav d-table">
           <li class="nav-item">
-            <h3 class="nav-link mx-2" routerLink="">Accueil</h3>
+            <h3 class="nav-link mx-5" routerLink="">Accueil</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-2" routerLink="/agenda">Agenda</h3>
+            <h3 class="nav-link mx-5" routerLink="/agenda">Agenda</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-2" routerLink="/blog">Blog</h3>
+            <h3 class="nav-link mx-5" routerLink="/blog">Blog</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-2" routerLink="/wiki">Wiki</h3>
+            <h3 class="nav-link mx-5" routerLink="/wiki">Wiki</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-2" routerLink="/equipe">Equipe</h3>
+            <h3 class="nav-link mx-5" routerLink="/equipe">Equipe</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-2" routerLink="/contact">Contact</h3>
+            <h3 class="nav-link mx-5" routerLink="/contact">Contact</h3>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="onload()">Search</button>
+        <form class="form-inline mx-3 my-2 col-lg-2 col-4">
+          <input class="fa fa-search form-control awesomplete mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         </form>
       </div>
       

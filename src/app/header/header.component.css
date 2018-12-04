@@ -1,66 +1,11 @@
-/*
-nav {
-
-	background-color:rgb(12,207,208) !important;
-	border-color:transparent;
-	background-image:none;
-	box-shadow:none;
-	z-index: 1;  
-}
-
-.nav2 {
-	background-color: #808080;
-	opacity: 0.9;
-	z-index: 1;
-	box-shadow: 0px 4px 8px black;
-	z-index: 1;
-}
-
-ul{
-	font-family: Didot, serif;
-}
-
-.nav-link:hover {
-	transform: scale(1.1);
-	cursor: pointer;
-}
-
-input {
-  font-family: inherit;
-  font-weight: 400;
-  font-weight: normal;
-  margin-right: 3%;
-  padding-right: 25px;
-  border-radius: 20px;
-}
-
-.collapse:not(.show){
-	display: inline;
-	transform: translateX(-100%);
-}
-
-.navbar-collapse{
-	transform: translatex(0);
-	animation: 1s linear ease-in;
-}
-
-*/
 .sidebar {
   height: 100vh;
-  width: 270px;
+  width: 350px;
   z-index: 1;
-  left: 0;
-  overflow-x: hidden;
-  text-decoration: none;
   font-size: 1rem;
   color: #fff;
-  background-color: #0e0d0d9e!important;
-  display: block;
-  overflow-y: scroll;
-}
-
-legend {
-  font-size: 1.2rem;
+  background-color:black !important;
+  opacity: 0.94;
 }
 
 .navbar-nav {
@@ -68,37 +13,46 @@ legend {
 }
 
 
-a {
-  font-size: 1.3rem;
-  margin-left: 30%;
-  color: #059e05;
+button{
+  background-color: white;
+  width: 60px;
+  border-radius: 20%;
 }
 
+.nav-item{
+  cursor: pointer;
+}
+
+a {
+  font-size: 2rem;
+  margin-left: 35%;
+  color: white;
+}
+
+
 #boutonfiltre2 {
-  /* transform: translateX(40px) !important; */
-  /* position: sticky; */
-  transition: transform 0.9s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   position: fixed;
   cursor: pointer;
 }
 
 .trans {
   transform: translateX(0px) !important;
-  transition: transform 0.6s ease-in-out !important;
+  transition: transform 0.5s ease-in-out !important;
 }
 
 .hidden {
-  transform: translateX(-335px);
-  transition: transform 0.9s ease-in-out;
+  transform: translateX(-350px);
+  transition: transform 0.5s ease-in-out;
 }
 
 .transBtn {
   z-index: 1000;
-  transition: transform 0.9s ease-in-out;
-  transform: translateX(270px);
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(350px);
 }
 
 .btnStartPos {
   transform: translateX();
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
