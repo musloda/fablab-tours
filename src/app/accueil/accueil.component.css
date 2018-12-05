@@ -1,6 +1,7 @@
 .backgroundimage {
   background-image: url("../../assets/images/image-header/background3.jpg");
   background-size: cover;
+  background-position: center;
   min-width: 100%;
   min-height: 100%;
   position: absolute;

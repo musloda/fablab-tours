@@ -1,24 +1,19 @@
-<!-- bouton pour faire apparaitre la sidebar -->
+<!-- navbar -->
 <nav class="navbar navbar-light fixed-top">
+  <!-- bouton pour faire apparaitre la sidebar -->
   <button [ngClass]="{'transBtn': sidebarDisplayed}" (click)="showSidebar()" (click)="isCollapsed = !isCollapsed" 
   id="boutonfiltre2" class="btnStartPos navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- menu burger ouverture sidebar -->
   <div *ngIf="!sidebarDisplayed" class="openside">
     <i class="fa fa-bars"></i>
   </div>
-  
+  <!-- croix fermeture sidebar -->
   <div *ngIf="sidebarDisplayed" class="closeside">
     <i class="fa fa-times"></i>
   </div>
 </button>
 
-<!-- ancien boutton show sidebar -->
-<!--
-  <div class="fixed-top" id="nav1" [ngClass]="{'trans': filterDisplayed}">
-    <button class="button" type="button" (click)="showFilter()" (click)="isCollapsed = !isCollapsed" id="boutonfiltre2" class="btnStartPos"
-    [ngClass]="{'transBtn': filterDisplayed}">{{ filterDisplayed ? '&#10005;' : '&#8801;'}}</button>
-  </div>
--->
 
 <!-- Logo FunLab -->
 <img src="../../assets/images/image-header/logo_funlab.png" routerLink="">
@@ -28,6 +23,8 @@
   <i class="fa fa-search"></i>
 </div>
 </nav>
+
+<!-- fin navbar -->
 
 <!-- Sidebar -->
 <nav class="sidebar hidden fixed-top" id="nav1" [ngClass]="{'trans': sidebarDisplayed}">
