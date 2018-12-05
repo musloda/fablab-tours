@@ -39,11 +39,14 @@ footer p {
   border-radius: 30%;
 }
 .social_footer_ul li img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
 }
 
 a{
   font-size: 20px;
   margin: 20px auto 0 auto;
+}
+
+.btn{
+  max-height: 45px;
 }
