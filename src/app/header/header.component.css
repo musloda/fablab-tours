@@ -1,10 +1,10 @@
 .sidebar {
   height: 100vh;
-  width: 280px;
+  width: 320px;
+  font-size: 8rem;
+  background-color:grey !important;
+  opacity: 0.92;
   z-index: 1;
-  font-size: 1rem;
-  background-color:black !important;
-  opacity: 0.94;
 }
 
 .navbar-nav {
@@ -12,24 +12,20 @@
 }
 
 img{
-  margin-left:40%;
-  z-index: 3;
+  margin-left:45%;
+  width: 200px;
+  z-index: -1;
 }
 
-i{
-  margin-left: 92%;
-  margin-top:-8%;
-}
-
-.navbar-toggler{
-  z-index:1;
-}
-
-
-h3{
+li{
   font-family: Didot, serif;
-  margin-top: 10%;
+  margin-top: 25%;
+  margin-left: 130%;
   color: #fff;
+}
+
+ul{
+  margin-top: 20%;
 }
 
 button{
@@ -40,7 +36,6 @@ button{
 .nav-item{
   cursor: pointer;
 }
-
 
 #boutonfiltre2 {
   transition: transform 0.5s ease-in-out;
@@ -54,21 +49,41 @@ button{
 }
 
 .hidden {
-  transform: translateX(-280px);
-  transition: transform 0.5s ease-in-out;
+  transform: translateX(-320px);
+  transition: transform 0.4s ease-in-out;
 }
 
 .transBtn {
-  z-index: 1000;
+  position: relative;
+  z-index:3;
+  /*
   transition: transform 0.5s ease-in-out;
-  transform: translateX(280px);
-}
-
-.btnStartPos {
-  transform: translateX();
-  transition: transform 0.5s ease-in-out;
+  transform: translateX(320px);
+  */
 }
 
 input{
   max-width: 200px;
+}
+
+@media screen and (max-width: 800px){
+  img{
+    margin-left: 33%;
+    width: 150px;
+  }
+  .navbar-toggler-icon{
+   margin-left: -30%;
+  }
+
+}
+
+.navbar-toggler-icon{
+  font-size: 1.8em;
+  color: black;
+}
+
+.loupe{
+  font-size: 1.8em;
+  margin-left: 93%;
+  margin-top:-90px;
 }

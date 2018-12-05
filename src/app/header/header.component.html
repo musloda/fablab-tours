@@ -5,15 +5,19 @@
   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
 </button>
- <!-- boutton show sidebar -->
- <!--
+<!-- boutton show sidebar -->
+<!--
   <div class="fixed-top" id="nav1" [ngClass]="{'trans': filterDisplayed}">
     <button class="button" type="button" (click)="showFilter()" (click)="isCollapsed = !isCollapsed" id="boutonfiltre2" class="btnStartPos"
     [ngClass]="{'transBtn': filterDisplayed}">{{ filterDisplayed ? '&#10005;' : '&#8801;'}}</button>
   </div>
 -->
-<img src="../../assets/images/image-header/logo_funlab.png" width='17%' routerLink="">
-<i class="fa fa-search"></i>
+
+<img src="../../assets/images/image-header/logo_funlab.png" routerLink="">
+
+<div class="loupe">
+  <i class="fa fa-search"></i>
+</div>
 </nav>
 <nav class="sidebar hidden fixed-top" id="nav1" [ngClass]="{'trans': sidebarDisplayed}">
   <div class="navbar-nav">
@@ -21,29 +25,33 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault" [ngbCollapse]="!isCollapsed">
         <ul class="nav sidebar-nav d-table">
           <li class="nav-item">
-            <h3 class="nav-link mx-5" routerLink="">Accueil</h3>
+            <h3 class="nav-link" routerLink="">Accueil</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-5" routerLink="/agenda">Agenda</h3>
+            <h3 class="nav-link" routerLink="/agenda">Agenda</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-5" routerLink="/blog">Blog</h3>
+            <h3 class="nav-link" routerLink="/blog">Blog</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-5" routerLink="/wiki">Wiki</h3>
+            <h3 class="nav-link" routerLink="/wiki">Wiki</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-5" routerLink="/equipe">Equipe</h3>
+            <h3 class="nav-link" routerLink="/equipe">Equipe</h3>
           </li>
           <li class="nav-item">
-            <h3 class="nav-link mx-5" routerLink="/contact">Contact</h3>
+            <h3 class="nav-link" routerLink="/contact">Contact</h3>
           </li>
         </ul>
-        <form class="form-inline mx-4 my-2 col-lg-2 col-4">
-          <input class="fa fa-search form-control awesomplete mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
-        </form>
       </div>
-      
     </div>
   </div>
 </nav>
+
+
+
+<!--
+  <form class="form-inline mx-4 my-2 col-lg-2 col-4">
+    <input class="fa fa-search form-control awesomplete mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+  </form>
+-->
