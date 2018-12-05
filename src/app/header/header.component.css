@@ -1,4 +1,5 @@
 .sidebar {
+  margin-top: 110px;
   height: 100vh;
   width: 320px;
   font-size: 8rem;
@@ -24,9 +25,6 @@ li{
   color: #fff;
 }
 
-ul{
-  margin-top: 20%;
-}
 
 button{
   border-radius: 20%;
@@ -67,6 +65,9 @@ input{
 }
 
 @media screen and (max-width: 800px){
+  .navbar{
+    height: 110px;
+  }
   img{
     margin-left: 33%;
     width: 150px;
@@ -84,4 +85,9 @@ input{
   font-size: 1.8em;
   margin-left: 93%;
   margin-top:-90px;
+}
+
+.navbar{
+  background-color: grey;
+  opacity: 0.92;
 }
