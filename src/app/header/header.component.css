@@ -84,6 +84,7 @@ input{
   font-size: 1.9em;
   margin-left: 94%;
   margin-top:-80px;
+  color: black;
 }
 
 .navbar{
@@ -99,10 +100,12 @@ input{
 
 .closeside{
   font-size: 2.8em;
+  color: black;
 }
 
 .openside{
   font-size: 2.6em;
+  color: black;
 }
 
 a{
