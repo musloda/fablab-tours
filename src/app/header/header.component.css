@@ -1,9 +1,9 @@
 .sidebar {
-  margin-top: 110px;
+  margin-top: 89px;
   height: 100vh;
   width: 320px;
   font-size: 8rem;
-  background-color:grey !important;
+  background-color:#666666 !important;
   opacity: 0.92;
   z-index: 1;
 }
@@ -14,17 +14,16 @@
 
 img{
   margin-left:45%;
-  width: 200px;
+  width: 155px;
   z-index: -1;
 }
 
 li{
   font-family: Didot, serif;
-  margin-top: 25%;
-  margin-left: 130%;
+  margin-top: 12%;
+  margin-left: 50%;
   color: #fff;
 }
-
 
 button{
   border-radius: 20%;
@@ -65,29 +64,44 @@ input{
 }
 
 @media screen and (max-width: 800px){
-  .navbar{
-    height: 110px;
-  }
+
   img{
     margin-left: 33%;
-    width: 150px;
   }
-  .navbar-toggler-icon{
-   margin-left: -30%;
+
+  li{
+    margin-top: 5%;
   }
+
+  .reseaux{
+    margin-top: 5%;
+  }
+
 }
 
-.navbar-toggler-icon{
-  font-size: 1.8em;
-}
 
 .loupe{
-  font-size: 1.8em;
-  margin-left: 93%;
-  margin-top:-90px;
+  font-size: 1.9em;
+  margin-left: 94%;
+  margin-top:-80px;
 }
 
 .navbar{
-  background-color: grey;
+  background-color: #666666;
   opacity: 0.92;
+}
+
+.reseaux{
+  font-size: 0.3em;
+  margin-top: 15%;
+  color: #fff;
+  margin-left: 10%
+}
+
+.closeside{
+  font-size: 2.8em;
+}
+
+.openside{
+  font-size: 2.6em;
 }

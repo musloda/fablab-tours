@@ -1,11 +1,18 @@
-
+<!-- bouton pour faire apparaitre la sidebar -->
 <nav class="navbar navbar-light fixed-top">
   <button [ngClass]="{'transBtn': sidebarDisplayed}" (click)="showSidebar()" (click)="isCollapsed = !isCollapsed" 
   id="boutonfiltre2" class="btnStartPos navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
+  <div *ngIf="!sidebarDisplayed" class="openside">
+    <i class="fa fa-bars"></i>
+  </div>
+  
+  <div *ngIf="sidebarDisplayed" class="closeside">
+    <i class="fa fa-times"></i>
+  </div>
 </button>
-<!-- boutton show sidebar -->
+
+<!-- ancien boutton show sidebar -->
 <!--
   <div class="fixed-top" id="nav1" [ngClass]="{'trans': filterDisplayed}">
     <button class="button" type="button" (click)="showFilter()" (click)="isCollapsed = !isCollapsed" id="boutonfiltre2" class="btnStartPos"
@@ -13,13 +20,16 @@
   </div>
 -->
 
+<!-- Logo FunLab -->
 <img src="../../assets/images/image-header/logo_funlab.png" routerLink="">
 
+<!-- Icon recherche -->
 <div class="loupe">
   <i class="fa fa-search"></i>
 </div>
-
 </nav>
+
+<!-- Sidebar -->
 <nav class="sidebar hidden fixed-top" id="nav1" [ngClass]="{'trans': sidebarDisplayed}">
   <div class="navbar-nav">
     <div class="row">
@@ -43,12 +53,20 @@
           <li class="nav-item">
             <h3 class="nav-link" routerLink="/contact">Contact</h3>
           </li>
+          <div class="reseaux">
+            <ul class="d-flex">
+              <i class="fa fa-facebook-f mx-4"></i>
+              <i class="fa fa-instagram mx-4"></i>
+              <i class="fa fa-twitter mx-4"></i>
+            </ul>
+          </div>
         </ul>
       </div>
     </div>
   </div>
 </nav>
 
+<!-- Fin sidebar -->
 
 
 <!--
