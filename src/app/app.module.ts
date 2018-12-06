@@ -18,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EquipeComponent } from './equipe/equipe.component';
 import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.
     ContactComponent,
     EquipeComponent,
     CommentCaMarcheComponent,
+    SearchComponent,
 
   ],
   imports: [
