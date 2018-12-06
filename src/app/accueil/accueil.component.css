@@ -1,7 +1,7 @@
 .backgroundimage {
   background-image: url("../../assets/images/image-header/accueil-back-ground.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: center;
   min-width: 100%;
   min-height: 100%;
   position: absolute;

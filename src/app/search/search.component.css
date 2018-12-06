@@ -1,17 +1,25 @@
 h1{
     margin-top: 20%;
+    font-size: 300%;
 }
 
 .form-control{
+   
     min-width: 40%;
     border-radius: 15px;
 }
 
+form{
+    margin-top: 8%;
+    cursor: pointer;
+}
+
 .backgroundimage{
-    background-image: url("../../assets/images/image-header/réalisation2.jpg");
+    background-image: url("../../assets/images/image-header/réalisation3.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
     min-width: 100%;
-    min-height: 50%;
+    min-height: 100%;
     position: absolute;
+
 }
