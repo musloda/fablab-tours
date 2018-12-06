@@ -32,7 +32,7 @@ footer p {
   display: table;
   margin: 15px auto 0 auto;
   list-style-type: none;
-  margin-left: 12%;
+
 }
 
 .social_footer_ul li {
@@ -63,5 +63,5 @@ footer p {
 
 .reseaux{
   margin-top: 2%;
-  margin-left: 8%;
+  margin-left: 6%;
 }
