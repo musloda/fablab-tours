@@ -82,7 +82,7 @@ input{
 
 .loupe{
   font-size: 1.9em;
-  margin-left: 94%;
+  margin-left: 95%;
   margin-top:-80px;
   color: black;
 }
@@ -99,12 +99,14 @@ input{
 }
 
 .closeside{
-  font-size: 2.8em;
+  margin-left: 5%;
+  font-size: 2.6em;
   color: black;
 }
 
 .openside{
-  font-size: 2.6em;
+  margin-left: 5%;
+  font-size: 2.3em;
   color: black;
 }
 
