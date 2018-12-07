@@ -41,7 +41,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgb(12,207,208);
   height: 2px;
   display: block;
   transform: rotateY(90deg);
@@ -153,7 +152,6 @@ h1{
 }
 
 .card1{
- background-color: #E0FFFF;
  height: 100%;
  margin-bottom: 10%;
 }
