@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from'@angular/core';
 
@@ -7,28 +8,13 @@ import { HostListener } from'@angular/core';
 	styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+	sidebarDisplayed: boolean;
 	constructor() { }
-
-	ngOnInit() {}
-
-	@HostListener("window:scroll", [])
-	onWindowScroll() {
-
-		const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-		if (number > 790) {
-			return true;
-		} else if (number > 2000) {
-			return false;
-		}
+	
+	ngOnInit() {
+		this.sidebarDisplayed = false;
 	}
-
-	onWindowfix() {
-		const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-		if (number < 791) {
-			return true;
-		} else if (number < 2000) {
-			return false;
-		}
+	showSidebar() {
+		this.sidebarDisplayed = !this.sidebarDisplayed;
 	}
-
-}
+};
