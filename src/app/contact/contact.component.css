@@ -1,8 +1,19 @@
+.backgroundimage{
+  background-image: url(../../assets/images/image-header/background-search8.png);
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  position: absolute;
+}
+
+
+
 .container {
   margin-top: 12%;
   margin-bottom: 15%;
   z-index: 2;
 }
+
 
 @media screen and (max-width: 550px) {
   .container {
