@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { AngularOpenlayersModule } from 'ngx-openlayers';
-import { HostListener } from'@angular/core';
+import { HostListener } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FullCalendarModule } from 'ng-fullcalendar';
 
 
 import { AppComponent } from './app.component';
@@ -19,7 +21,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { IndexComponent } from './index/index.component';
 import { EquipeComponent } from './equipe/equipe.component';
 import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.component';
-
 
 @NgModule({
   declarations: [
@@ -43,8 +44,8 @@ import { CommentCaMarcheComponent } from './comment-ca-marche/comment-ca-marche.
     AngularOpenlayersModule,
     FormsModule,
     AppRoutingModule,
-
-
+    HttpClientModule,
+    FullCalendarModule
   ],
 
   providers: [],

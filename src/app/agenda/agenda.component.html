@@ -1,3 +1,42 @@
-<h1>
-  agenda works!
-</h1>
+<div class="container taille">
+    <ngb-carousel *ngIf="evenements">
+        <ng-template ngbSlide *ngFor='let event of evenements'>
+            <img src="../../assets/images/image-contact/contact1.jpg" alt="fond_blanc">
+            <div class="carousel-caption general rounded">
+                <h1>{{event.title}}</h1>
+                <p class="date">Quand: du {{event.start}} au {{event.end}}</p>
+                <p class="lieu">Où: {{event.location}}</p>
+                <p class="description">Description: {{event.description}}</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+    <div class="my-5 text-center">
+        <h1>{{ titre }}</h1>
+        <div *ngIf="calendarOptions">
+            <ng-fullcalendar #ucCalendar (eventClick)="eventClick($event.detail)" [options]="calendarOptions" [(eventsModel)]="evenements"></ng-fullcalendar>
+      </div>
+    </div>
+</div>
+<!-- debut modal -->
+<div class="modal" id="myModal" [style.display]="showModal ? 'block' : 'none'">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">{{ name }}</h4>
+                <button type="button" class="close" data-dismiss="modal" (click) = "hide()">&times;</button>
+            </div>
+    <!-- Modal body -->
+            <div class="modal-body">
+                <p>Quand : {{ dateStart }}{{ dateEnd }}</p>
+                <p>Où: {{ lieu }}</p>
+                <p>Description: {{ description }}</p>
+            </div>
+    <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal" (click) = "hide()">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin modal -->
