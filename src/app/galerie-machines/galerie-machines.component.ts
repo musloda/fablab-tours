@@ -16,7 +16,6 @@ export class GalerieMachinesComponent implements OnInit {
     // récuperer les données concernant les machines de la base de données.
     this.http.get<any>(`http://localhost:3000/api/machines`).subscribe(res => {
       this.machines = res;
-      // console.log(this.machines[0].photo);
     });
   }
 

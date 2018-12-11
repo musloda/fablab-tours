@@ -1,3 +1,4 @@
+/* Conteneur des card organisées sous form de  Masonry */
 .card-columns {
   padding-top: 120px;
   padding-bottom: 3px;
@@ -10,9 +11,9 @@
   transition: all .5s ease;
   -moz-transition: all .5s ease;
   -webkit-transition: all .5s ease;
-  /* margin: 15px 0; */
 }
 
+/* conportement de la card au survol de la souris */
 .card-columns .slide-hover {
   position: absolute;
   height: 100%;
@@ -28,6 +29,10 @@
   -webkit-border-radius: 5px;
 }
 
+.card-columns .item-slide:hover .text-wrap {
+  background: none
+}
+
 @media screen and (max-width: 1000px) {
   .card-columns .slide-hover {
    background: rgba(0, 0, 0, .2);
@@ -38,11 +43,11 @@
   left: 0px;
 }
 
+
 img {
   max-width: 100%;
 }
-
-
+/* style au card */
 .box-img {
   width: 100%;
   float: left;
@@ -53,8 +58,7 @@ img {
   border: 1px solid #ccc;
 }
 
-
-
+/* style text */
 .text-wrap {
   position: absolute;
   bottom: 0;
@@ -82,8 +86,5 @@ img {
 }
 
 
-.card-columns .item-slide:hover .text-wrap {
-  background: none
-}
 
 
